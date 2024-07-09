@@ -1,0 +1,149 @@
+/*estilos CSS*/
+body{
+     /*estilos para el cuerpo del documento*/
+    font-family: Arial, Helvetica, sans-serif;/*asignado el tipo de fuente*/
+    line-height: 1.6;/*altura de interlinieado*/
+    margin: 0;/*eliminando margen*/
+    padding: 0;/*eliminando padding*/
+    /*background-color: #f4f4f4;/*color de fondo*/
+    background: url('img/pexels-tobiasbjorkli-2113566.jpg') no-repeat center center fixed;
+    background-size: cover;/*ajusta el tamaño de fondo*/
+    color: #333;
+}
+header,footer{/*estilos para la cabezera y el pie de pagina*/
+    background-color: rgba(51,51,51,0.9);/*definiendo el color de fondo de encabezado y pie de pagina*/
+    color: white;/*color de encabezado y pie de pagina*/
+    text-align: center;/*alineando el texto al centro*/
+    padding: 3em 0;/*asignar padding*/  
+    margin-top: 50px;  
+}
+header h1,footer p{
+    margin: 0;/*elimando el manrgen*/
+}
+nav{
+    background-color: rgba(68,68,68,0.9);/*agreganndo color de fondo de la barra de navegacion*/
+    color: white;/*color de texto de la barra de navegacion*/
+    text-align: center;/*alineamos el texto de la barra de navegacion*/
+    padding: 1em 0;/*padding asignado*/
+    position: fixed;/*fijando la posicion de la barra de navegacion*/
+    width: 100%;/*ancho completo*/
+    top: 0%;/*posicion superior*/
+    z-index: 100%;/*capas superiores*/
+    box-shadow:0 2px 4px rgba(0,0,0,0.9);/*sombra*/
+}
+nav a{/*config de los enlaces*/
+    color: white;/*color de texto para los enlaces*/
+    text-decoration: none;/*eliminamos el subrayado*/
+    margin: 0 15px;/*margen de 15 pixeles*/
+    font-weight: bold;/*negrita*/
+    transition: color 0.3s;/*transicion de color*/
+}
+nav a:hover{
+    color: aqua;
+    text-decoration: underline;/*agrega subrayado a los enlaces cuando el cursor esta sobre ello*/
+}
+.container{
+    background-color: white;/*color del contenedor*/
+    width: 60%;/*ancho de contenedor*/
+    margin: auto;/*automargen*/
+    padding: 20px;/*padding interno del contenedor de 20 pixeles*/
+    overflow: hidden;/*controlar el desbordamiento*/
+    box-shadow: 0 0 10px rgba(0,0,0,1);/*sombra de apecto de profundidad*/
+    margin-top: 50px;/*margen superior*/
+    border-radius: 15px;/*bordes redondeados*/
+    animation: fadeIn 1.5s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0; /*inica fadeIn*/
+    }
+    to{
+        opacity: 1;/*termina el fadeIn*/
+    }
+}
+img{
+    max-width: 100%;/*ancho maximo de la imagen*/
+    height: auto;/*altura auto para la imagen*/
+    display: block;/*muestra la imagen como un bloque*/
+    margin: auto;/*su margen auto en el centro*/
+    border-radius: 50px;/*borde de la imagen*/
+    box-shadow: 0 0 20px black;/*sombra*/
+}
+table{
+    width: 100%;/*ancho de la tabla*/
+    border-collapse: collapse;/*colapsar los bordes de la tabla*/
+    margin: 20px 0;/*margen vertical de la tabbla*/
+}
+table th, td{
+    border: 1px solid black;/*bordes de la tabla*/
+    padding: 12px;/*padding de 12 pixeles relleno*/
+    text-align: left;/*alinea a la izquierda*/
+}
+th, td{
+    padding: 10px;/*modificando el padding interno de las celdas de esa tabla*/
+    text-align: left;/*alineacion del texto dentro de las celdas izquierda*/
+}
+th{
+    background-color: #333;/*color de encabezado*/
+    color: white;/*color de texto del encabezado*/
+}
+.social-icons{
+    margin: 20px 0;/*margen*/
+    text-align: center;/*texto centrado*/
+}
+.social-icons a{
+    margin: 0 10px;/*margen laterales*/
+    color: grey;/*color de icono*/
+    font-size: 1.5em;/*tamaño de icono*/
+    transition: color 0.3s, transform 0.3s;/*transiciones*/
+}
+.social-icons a:hover{
+    color: #000;/*color al pasar el raton*/
+    transform: scale(1.1);/*escala*/
+}
+form{
+    background-color: #f9f9f9;/*color de fondo*/
+    padding: 20px;/*relleno*/
+    border-radius: 8px;/*borde redondeado*/
+    box-shadow: 0 0 20px gray;/*sombra*/
+}
+form label{
+    display: block;/*se muestra bloque*/
+    margin-bottom: 5px;/*margen inferior*/
+    font-weight: bold;/*negrita*/
+}
+form input, form textarea{
+    width: calc(100% - 22px);/*ancho de espacio para rellenar el texto*/
+    padding: 10px;/*relleno*/
+    margin-bottom: 10px;/*margen inferior*/
+    border: 1px solid #ccc;/*borde*/
+    border-radius: 5px;/*borde redondeado*/
+}
+form input[type="submit"]{
+    background-color: #333;/*color de fondo*/
+    color: white;/*color de texto*/
+    border: none;/*sin border*/
+    cursor: pointer;/*cursor apuntando*/
+    transition: backgroud-color 0.3;/*color transicion*/
+    padding: 10px 20px;/*relleno*/
+}
+form input[type="submit"]:hover{
+    background-color:  #555;
+}
+.testimonials{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+}
+.testimonial{
+    margin-bottom: 20px;/*margen inferior*/
+}
+.testimonial p{
+    font-style: italic;/*cursiva*/
+}
+.testimonial .author{
+    text-align: right;/*hacia la derecha*/
+    font-weight: bold;/*negrita*/
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="estilostienda.css"><!--enlaca la hoja de estilo-->
+</head>
+<body>
+    <header><!--CABEZERA-->
+        <h1>Tienda Alejo</h1>
+    </header>
+    <div class="contendedor">
+        <div class="productos">
+            <!--PRIMER PRODUCTO-->
+            <div class="producto">
+                <img src="img/silla.jpeg" alt="Silla de madera"><!--imagen del primer producto-->
+                <h3>Silla de madera de roble 50cm x 50cm x 90cm</h3><!--name del produto-->
+                <p>Precio: S/70</p><!--precio del primer producto-->
+                <button onclick="addtoCarrito('Silla de madera de roble',70)">Agregar al carrito</button><!--boton para agregar al carrito-->
+            </div>
+            <div class="producto">
+                <img src="img/mesa.jpeg" alt="Mesa de madera">
+                <h3>Mesa de madera de roble 70cm x 70cm x 150cm</h3>
+                <p>Precio: S/300</p>
+                <button onclick="addtoCarrito('Mesa de madera de roble',300)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/comedor.jpg" alt="Comedor de madera">
+                <h3>Juego de comedor de madera de roble</h3>
+                <p>Precio: S/900</p>
+                <button onclick="addtoCarrito('Juego de comedor de madera de roble', 900)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="carrito">
+            <h2>Carrito de compras</h2><!--titulo de la seccioon del carrito de compras-->
+            <ul id="car-list">
+                
+            </ul>
+            <p>Total: S/<span id="car-total">0</span></p><!--total de compra-->
+                <button onclick="compra()">Comprar</button><!--boton para realizar la compra-->
+        </div>
+    </div>
+    <script src="js/logica.js"></script><!--vincula el archivo javascript-->
+</body>
+</html>
